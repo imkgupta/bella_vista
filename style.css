@@ -64,7 +64,7 @@ body{
 
 .hero{
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/images/bellavista1.jpg') center/cover;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/bellavista1.jpg') center/cover;
     display: flex;
     margin-top: 80px;
     justify-content: center;
@@ -199,6 +199,7 @@ body{
     
 }
 
+
 .about{
     padding: 5rem 0;
     background-color: white;
@@ -289,4 +290,3 @@ body{
     outline: none;
     border-color: #e74c3c;
 }
-
