@@ -75,7 +75,7 @@ body{
 
 .hero{
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/images/bellavista1.jpg') center/cover;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/bellavista1.jpg') center/cover;
     display: flex;
     margin-top: 80px;
     justify-content: center;
@@ -210,6 +210,7 @@ body{
     
 }
 
+
 .about{
     padding: 5rem 0;
     background-color: white;
@@ -301,106 +302,3 @@ body{
     border-color: var(--primary-color);
 }
 
-
-
-
-@media (max-width: 768px) {
-    .hero-content h2 {
-        font-size: 2.5rem;
-    }
-
-    .hero-button {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .btn {
-        width: 80%;
-        text-align: center;
-    }
-
-    .about-content, .contact-content {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-
-    .navbar {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .nav-links {
-        gap: 1rem;
-    }
-}
-
-
-@media (max-width: 480px){
-
-    .hero-content {
-        font-size: 2rem;
-    }
-
-    .container {
-        padding: 0 15px;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        gap: 0.rem;
-    }
-}
-
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes slideInLeft {
-    from {
-        opacity: 1;
-        transform: translateX(-50px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-
-.hero-content {
-    animation: fadeInUp 1s ease-out;
-}
-
-.menu-item {
-    animation: fadeInUp 0.6s ease-out;
-    animation-fill-mode: both;
-}
-
-.menu-item:nth-child(1) {animation-delay: 0.1s;}
-.menu-item:nth-child(2) {animation-delay: 0.2s;}
-.menu-item:nth-child(3) {animation-delay: 0.3s;}
-
-.about-image {
-    animation: fadeInUp 0.8s ease-out 0.3s both;
-}
-
-.section-title {
-    opacity: 1;
-    transform: translateY(20px);
-    transition: all 0.6s ease;
-}
-
-.section-title.animate {
-    opacity: 0;
-    transform: translateY(0);
-}
